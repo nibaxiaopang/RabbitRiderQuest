@@ -623,10 +623,10 @@ Protect yourself and outsmart your enemies in this action-packed game. Use barri
             </objects>
             <point key="canvasLocation" x="2066.25" y="-915.84507042253517"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Rabbit Rider Navigation Controller-->
         <scene sceneID="f5s-Zm-aZM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbh-Ij-UBf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbh-Ij-UBf" customClass="RabbitRiderNavigationController" customModule="RabbitRiderQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sDv-5A-J4e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
