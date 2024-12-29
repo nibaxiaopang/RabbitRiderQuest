@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hbh-Ij-UBf">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -409,12 +410,20 @@
                                                     <segue destination="5FT-fo-N50" kind="show" id="umh-cu-hRc"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best score：10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqa-X3-J8H">
+                                                <rect key="frame" x="127" y="78.666666666666686" width="123" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.54117647059999996" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="rH6-Ch-bJQ" firstAttribute="top" secondItem="fEN-wb-yYP" secondAttribute="top" id="5R4-bJ-6SH"/>
+                                            <constraint firstAttribute="bottom" secondItem="fqa-X3-J8H" secondAttribute="bottom" constant="8" id="BSS-nt-3Ky"/>
                                             <constraint firstItem="McT-Ye-QVr" firstAttribute="top" secondItem="fEN-wb-yYP" secondAttribute="top" id="MKj-lL-DKZ"/>
                                             <constraint firstAttribute="bottom" secondItem="rH6-Ch-bJQ" secondAttribute="bottom" id="Ma6-Rh-0t6"/>
+                                            <constraint firstItem="fqa-X3-J8H" firstAttribute="centerX" secondItem="fEN-wb-yYP" secondAttribute="centerX" id="Vlz-Cg-Pr1"/>
                                             <constraint firstAttribute="trailing" secondItem="McT-Ye-QVr" secondAttribute="trailing" id="jTF-iF-Qqa"/>
                                             <constraint firstItem="rH6-Ch-bJQ" firstAttribute="leading" secondItem="fEN-wb-yYP" secondAttribute="leading" id="nlK-g3-Woc"/>
                                             <constraint firstAttribute="bottom" secondItem="McT-Ye-QVr" secondAttribute="bottom" id="qb1-eZ-EGH"/>
@@ -438,16 +447,24 @@
                                                     <segue destination="lTh-nS-TLY" kind="show" id="Sdf-WL-O2K"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best score：10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2CX-P6-tor">
+                                                <rect key="frame" x="127" y="78.333333333333314" width="123" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.54117647059999996" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="wFh-ht-nG9" secondAttribute="bottom" id="0h9-uS-fW4"/>
                                             <constraint firstAttribute="trailing" secondItem="752-cF-h5A" secondAttribute="trailing" id="BIU-t0-QPk"/>
                                             <constraint firstItem="752-cF-h5A" firstAttribute="leading" secondItem="Viw-N6-P8i" secondAttribute="leading" id="LKN-IB-pUD"/>
+                                            <constraint firstItem="2CX-P6-tor" firstAttribute="centerX" secondItem="Viw-N6-P8i" secondAttribute="centerX" id="STU-MG-cH9"/>
                                             <constraint firstAttribute="trailing" secondItem="wFh-ht-nG9" secondAttribute="trailing" id="ViA-yi-JC8"/>
                                             <constraint firstItem="wFh-ht-nG9" firstAttribute="leading" secondItem="Viw-N6-P8i" secondAttribute="leading" id="ep9-As-71I"/>
                                             <constraint firstItem="752-cF-h5A" firstAttribute="top" secondItem="Viw-N6-P8i" secondAttribute="top" id="hAn-Fw-Cp2"/>
                                             <constraint firstAttribute="bottom" secondItem="752-cF-h5A" secondAttribute="bottom" id="ldJ-am-1c5"/>
+                                            <constraint firstAttribute="bottom" secondItem="2CX-P6-tor" secondAttribute="bottom" constant="8" id="tyi-yc-tkY"/>
                                             <constraint firstItem="wFh-ht-nG9" firstAttribute="top" secondItem="Viw-N6-P8i" secondAttribute="top" id="v61-Bm-ms6"/>
                                         </constraints>
                                     </view>
@@ -467,14 +484,22 @@
                                                     <segue destination="dTF-8B-pgp" kind="show" id="Zn7-D1-iTX"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best score：10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M93-TN-qed">
+                                                <rect key="frame" x="127" y="78.666666666666629" width="123" height="21"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.54117647059999996" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="M93-TN-qed" secondAttribute="bottom" constant="8" id="0r6-X4-Yap"/>
                                             <constraint firstItem="Qe9-Jg-ZKK" firstAttribute="top" secondItem="7DG-oF-CQZ" secondAttribute="top" id="84F-kc-b7s"/>
                                             <constraint firstAttribute="bottom" secondItem="2Sb-WG-Q6n" secondAttribute="bottom" id="8UN-Tp-D1h"/>
                                             <constraint firstAttribute="trailing" secondItem="Qe9-Jg-ZKK" secondAttribute="trailing" id="Fah-y4-jtb"/>
                                             <constraint firstAttribute="trailing" secondItem="2Sb-WG-Q6n" secondAttribute="trailing" id="ILv-Zm-y7k"/>
                                             <constraint firstItem="2Sb-WG-Q6n" firstAttribute="leading" secondItem="7DG-oF-CQZ" secondAttribute="leading" id="S3S-BI-T4d"/>
+                                            <constraint firstItem="M93-TN-qed" firstAttribute="centerX" secondItem="7DG-oF-CQZ" secondAttribute="centerX" id="UCw-wK-nRh"/>
                                             <constraint firstItem="Qe9-Jg-ZKK" firstAttribute="leading" secondItem="7DG-oF-CQZ" secondAttribute="leading" id="YtS-4o-P5b"/>
                                             <constraint firstItem="2Sb-WG-Q6n" firstAttribute="top" secondItem="7DG-oF-CQZ" secondAttribute="top" id="fZY-PJ-aMF"/>
                                             <constraint firstAttribute="bottom" secondItem="Qe9-Jg-ZKK" secondAttribute="bottom" id="tQb-QU-rUe"/>
@@ -527,6 +552,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="BbestScoreLbl" destination="M93-TN-qed" id="Usz-uA-Xjr"/>
+                        <outlet property="DbestScoreLbl" destination="2CX-P6-tor" id="i0v-A7-13m"/>
+                        <outlet property="HbestScoreLbl" destination="fqa-X3-J8H" id="r9g-z1-4RI"/>
+                        <outlet property="contentView" destination="RE3-X3-mej" id="FWa-5M-Kuo"/>
                         <outlet property="imglogo" destination="clT-yb-Qka" id="nE9-GL-48v"/>
                     </connections>
                 </viewController>

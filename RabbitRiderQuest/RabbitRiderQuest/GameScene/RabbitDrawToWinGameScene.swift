@@ -28,6 +28,7 @@ class RabbitDrawToWinGameScene: SKScene {
     var score = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
+            NotificationCenter.default.post(name: NSNotification.Name("DrawToWinScoreDidChange"), object: self, userInfo: ["newScore": score])
         }
     }
     var drawnPath = UIBezierPath()
@@ -220,6 +221,8 @@ class RabbitDrawToWinGameScene: SKScene {
     func endGame() {
         removeAllActions()
         removeAllChildren()
+        
+        self.viewController?.checkPoRecord()
 
         let gameOverLabel = SKLabelNode(fontNamed: "Chalkduster")
         gameOverLabel.text = "Game Over"

@@ -240,6 +240,8 @@ class RabbitHighwaySurvivalGameScene: SKScene, SKPhysicsContactDelegate {
     func gameOver() {
         isGameOver = true
         
+        self.viewController?.checkPoRecord()
+        
         // Stop scoring
         removeAction(forKey: "scoring")
         

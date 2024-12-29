@@ -10,13 +10,28 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class RabbitBarrierBlitzGameVC: UIViewController, SKPhysicsContactDelegate {
+class RabbitBarrierBlitzGameVC: UIViewController, SKPhysicsContactDelegate, RabbitRiderScoreProcol {
     
     @IBOutlet weak var skView: SKView!
     
     var score = 0 {
         didSet {
             // Update any UI elements if needed
+        }
+    }
+    
+    func checkPoRecord() {
+        if RabbitRiderScoreManager.shared.config_barrierBlitzScore(score: score) {
+            let alert = UIAlertController(
+                        title: "Congratulations!",
+                        message: "You've broken the record and achieved the highest score:\(score)!",
+                        preferredStyle: .alert
+                    )
+            let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
         }
     }
     
@@ -29,7 +44,7 @@ class RabbitBarrierBlitzGameVC: UIViewController, SKPhysicsContactDelegate {
         skView.presentScene(scene)
         skView.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(scoreDidChange(_:)), name: NSNotification.Name("ScoreDidChange"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(scoreDidChange(_:)), name: NSNotification.Name("BarrierBlitzScoreDidChange"), object: nil)
         
         // Show "How to Play" alert
         showHowToPlayAlert(scene: scene)

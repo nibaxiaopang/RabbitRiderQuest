@@ -20,6 +20,7 @@ class RabbitBarrierBlitzGameScene: SKScene, SKPhysicsContactDelegate {
     var score = 0 {
         didSet {
             scoreLabel.text = "Score: \(score)"
+            NotificationCenter.default.post(name: NSNotification.Name("BarrierBlitzScoreDidChange"), object: self, userInfo: ["newScore": score])
         }
     }
     var currentLine: SKShapeNode?
@@ -181,6 +182,8 @@ class RabbitBarrierBlitzGameScene: SKScene, SKPhysicsContactDelegate {
     func gameOver() {
         removeAllActions()
         removeAllChildren()
+        
+        self.viewController?.checkPoRecord()
         
         let alert = UIAlertController(title: "Game Over", message: "You lost the game!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Restart", style: .default, handler: { _ in

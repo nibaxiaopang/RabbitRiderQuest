@@ -14,10 +14,22 @@ class RabbitRiderHomeViewController: UIViewController {
     
     @IBOutlet weak var imglogo: UIImageView!
     
+    @IBOutlet weak var contentView: UIView!
+    
+    @IBOutlet weak var HbestScoreLbl: UILabel!
+    @IBOutlet weak var DbestScoreLbl: UILabel!
+    @IBOutlet weak var BbestScoreLbl: UILabel!
     //MARK: - Override Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         animateLogo()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        HbestScoreLbl.text = "Best score: \(RabbitRiderScoreManager.shared.highwaySurvivalScore)"
+        DbestScoreLbl.text = "Best score: \(RabbitRiderScoreManager.shared.drawToWinScore)"
+        BbestScoreLbl.text = "Best score: \(RabbitRiderScoreManager.shared.barrierBlitzScore)"
     }
     
     //MARK: - Functions
