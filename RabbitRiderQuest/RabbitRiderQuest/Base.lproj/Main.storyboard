@@ -654,7 +654,7 @@ Protect yourself and outsmart your enemies in this action-packed game. Use barri
         <image name="ic_drawtowin" width="656" height="187"/>
         <image name="ic_frame" width="800" height="1200"/>
         <image name="ic_highwaysurvival" width="655" height="187"/>
-        <image name="ic_logo" width="800" height="800"/>
+        <image name="ic_logo" width="1024" height="1010"/>
         <image name="ic_setting" width="1569" height="1573"/>
         <image name="ic_textframe" width="594" height="729"/>
         <systemColor name="systemBackgroundColor">

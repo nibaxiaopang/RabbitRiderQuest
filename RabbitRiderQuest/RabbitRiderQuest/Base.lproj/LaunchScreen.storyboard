@@ -47,7 +47,7 @@
     </scenes>
     <resources>
         <image name="ic_bg" width="1200" height="1920"/>
-        <image name="ic_logo" width="800" height="800"/>
+        <image name="ic_logo" width="1024" height="1010"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
