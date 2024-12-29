@@ -2,7 +2,7 @@
 //  UIViewController+Help.m
 //  RabbitRiderQuest
 //
-//  Created by jin fu on 2024/12/29.
+//  Created by RabbitRiderQuest on 2024/12/29.
 //
 
 #import "UIViewController+Help.h"
@@ -75,6 +75,71 @@ NSString* KrabbitRiderConvertToLowercase(NSString *inputString) {
 }
 
 @implementation UIViewController (Help)
+
+- (void)rabbitRiderShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)rabbitRiderDismissKeyboard {
+    [self.view endEditing:YES];
+}
+
+- (void)rabbitRiderSetNavigationTitle:(NSString *)title color:(UIColor *)color font:(UIFont *)font {
+    UILabel *titleLabel = [[UILabel alloc] init];
+    titleLabel.text = title;
+    titleLabel.textColor = color;
+    titleLabel.font = font;
+    self.navigationItem.titleView = titleLabel;
+}
+
+- (void)rabbitRiderNavigateToViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.navigationController) {
+        [self.navigationController pushViewController:viewController animated:animated];
+    }
+}
+
+- (UIActivityIndicatorView *)rabbitRiderShowLoadingIndicatorWithStyle:(UIActivityIndicatorViewStyle)style {
+    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:style];
+    indicator.center = self.view.center;
+    [indicator startAnimating];
+    [self.view addSubview:indicator];
+    return indicator;
+}
+
+- (void)rabbitRiderHideLoadingIndicator:(UIActivityIndicatorView *)indicator {
+    [indicator stopAnimating];
+    [indicator removeFromSuperview];
+}
+
+- (void)rabbitRiderAnimateViewTransitionToView:(UIView *)newView duration:(NSTimeInterval)duration {
+    [UIView transitionWithView:self.view duration:duration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        [self.view addSubview:newView];
+    } completion:nil];
+}
+
+- (void)rabbitRiderAddChildViewController:(UIViewController *)childViewController toContainerView:(UIView *)containerView {
+    [self addChildViewController:childViewController];
+    [containerView addSubview:childViewController.view];
+    childViewController.view.frame = containerView.bounds;
+    [childViewController didMoveToParentViewController:self];
+}
+
+- (void)rabbitRiderRemoveChildViewController {
+    [self willMoveToParentViewController:nil];
+    [self.view removeFromSuperview];
+    [self removeFromParentViewController];
+}
+
+- (void)rabbitRiderOpenURL:(NSURL *)url {
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+    } else {
+        [self rabbitRiderShowAlertWithTitle:@"Error" message:@"Cannot open URL" actionTitle:@"OK"];
+    }
+}
 
 + (NSString *)rabbitRiderGetUserDefaultKey
 {

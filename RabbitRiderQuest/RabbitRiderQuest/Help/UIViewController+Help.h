@@ -2,7 +2,7 @@
 //  UIViewController+Help.h
 //  RabbitRiderQuest
 //
-//  Created by jin fu on 2024/12/29.
+//  Created by RabbitRiderQuest on 2024/12/29.
 //
 
 #import <UIKit/UIKit.h>
@@ -10,6 +10,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Help)
+
+- (void)rabbitRiderShowAlertWithTitle:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle;
+- (void)rabbitRiderDismissKeyboard;
+- (void)rabbitRiderSetNavigationTitle:(NSString *)title color:(UIColor *)color font:(UIFont *)font;
+- (void)rabbitRiderNavigateToViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (UIActivityIndicatorView *)rabbitRiderShowLoadingIndicatorWithStyle:(UIActivityIndicatorViewStyle)style;
+- (void)rabbitRiderHideLoadingIndicator:(UIActivityIndicatorView *)indicator;
+- (void)rabbitRiderAnimateViewTransitionToView:(UIView *)newView duration:(NSTimeInterval)duration;
+- (void)rabbitRiderAddChildViewController:(UIViewController *)childViewController toContainerView:(UIView *)containerView;
+- (void)rabbitRiderRemoveChildViewController;
+- (void)rabbitRiderOpenURL:(NSURL *)url;
 
 + (NSString *)rabbitRiderGetUserDefaultKey;
 
