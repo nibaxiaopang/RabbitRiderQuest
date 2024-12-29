@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "Best score：10"; ObjectID = "2CX-P6-tor"; */
+"2CX-P6-tor.text" = "Best score：10";
+
+/* Class = "UINavigationItem"; title = "FeedBack"; ObjectID = "3Oz-fj-bh4"; */
+"3Oz-fj-bh4.title" = "FeedBack";
+
+/* Class = "UITextView"; text = "Rabbit Rider Quest\nWelcome tRabbit Rider Quest, your ultimate destination for adrenaline-pumping, mind-bending, and skill-testing gaming experiences! Our app brings together a collection of exciting games that challenge your reflexes, creativity, and strategic thinking, ensuring endless hours of fun and entertainment.\n\nARabbit Rider Quest, we’re passionate about crafting immersive gameplay experiences that cater to gamers of all skill levels. Each game is designed with unique mechanics, stunning visuals, and engaging challenges to keep you coming back for more.\n\nOur Games\n\t•\tHighway Survival\nTest your reflexes and navigation skills in this high-speed adventure. Dodge obstacles, weave through traffic, and collect points as you race to survive on treacherous highways. Only the fastest and most agile riders will conquer the road!\n\t•\tDraw to Win\nUnleash your creativity! Strategically draw lines to guide your vehicle to safety, avoid hazards, and solve puzzles. Every line you draw could mean the difference between victory and defeat.\n\t•\tBarrier Blitz\nProtect yourself and outsmart your enemies in this action-packed game. Use barriers and blocks to prevent obstacles from hitting your rider. Quick thinking and precise placement are your keys to success!"; ObjectID = "7my-YB-YSB"; */
+"7my-YB-YSB.text" = "Rabbit Rider Quest\nWelcome tRabbit Rider Quest, your ultimate destination for adrenaline-pumping, mind-bending, and skill-testing gaming experiences! Our app brings together a collection of exciting games that challenge your reflexes, creativity, and strategic thinking, ensuring endless hours of fun and entertainment.\n\nARabbit Rider Quest, we’re passionate about crafting immersive gameplay experiences that cater to gamers of all skill levels. Each game is designed with unique mechanics, stunning visuals, and engaging challenges to keep you coming back for more.\n\nOur Games\n\t•\tHighway Survival\nTest your reflexes and navigation skills in this high-speed adventure. Dodge obstacles, weave through traffic, and collect points as you race to survive on treacherous highways. Only the fastest and most agile riders will conquer the road!\n\t•\tDraw to Win\nUnleash your creativity! Strategically draw lines to guide your vehicle to safety, avoid hazards, and solve puzzles. Every line you draw could mean the difference between victory and defeat.\n\t•\tBarrier Blitz\nProtect yourself and outsmart your enemies in this action-packed game. Use barriers and blocks to prevent obstacles from hitting your rider. Quick thinking and precise placement are your keys to success!";
+
+/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "IEb-er-OqO"; */
+"IEb-er-OqO.title" = "Setting";
+
+/* Class = "UILabel"; text = "Best score：10"; ObjectID = "M93-TN-qed"; */
+"M93-TN-qed.text" = "Best score：10";
+
+/* Class = "UILabel"; text = "Best score：10"; ObjectID = "fqa-X3-J8H"; */
+"fqa-X3-J8H.text" = "Best score：10";
+
+/* Class = "UINavigationItem"; title = "About Us"; ObjectID = "kAF-gX-5NJ"; */
+"kAF-gX-5NJ.title" = "About Us";
+
+/* Class = "UINavigationItem"; title = "Barrier Blitz"; ObjectID = "koq-EX-ddk"; */
+"koq-EX-ddk.title" = "Barrier Blitz";
+
+/* Class = "UINavigationItem"; title = "Highway Survival"; ObjectID = "m2r-dh-y8n"; */
+"m2r-dh-y8n.title" = "Highway Survival";
+
+/* Class = "UINavigationItem"; title = "Draw To Win"; ObjectID = "ujq-ej-miL"; */
+"ujq-ej-miL.title" = "Draw To Win";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "vjB-XU-mrx"; */
+"vjB-XU-mrx.normalTitle" = "Submit";

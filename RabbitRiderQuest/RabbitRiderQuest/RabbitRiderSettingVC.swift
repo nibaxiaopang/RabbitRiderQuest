@@ -42,7 +42,7 @@ class RabbitRiderSettingVC: UIViewController {
     }
     
     @IBAction func btnShareApp(_ sender: Any) {
-        let textToShare = "Check out RealRiderOdyssey app!"
+        let textToShare = "Check out Rabbit Rider Quest app!"
         
         let activityViewController = UIActivityViewController(activityItems: [textToShare], applicationActivities: nil)
         

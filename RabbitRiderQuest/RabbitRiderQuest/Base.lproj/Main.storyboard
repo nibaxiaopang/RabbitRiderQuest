@@ -270,9 +270,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bg" translatesAutoresizingMaskIntoConstraints="NO" id="xd6-GF-vtP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-7X-B51">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,14 +290,16 @@
                             <constraint firstAttribute="trailing" secondItem="eiH-7X-B51" secondAttribute="trailing" id="744-v6-J34"/>
                             <constraint firstItem="eiH-7X-B51" firstAttribute="leading" secondItem="CB2-YZ-trT" secondAttribute="leading" id="A9V-bA-0qp"/>
                             <constraint firstItem="BSp-NR-8Dc" firstAttribute="centerY" secondItem="CB2-YZ-trT" secondAttribute="centerY" id="FnP-nH-6fK"/>
-                            <constraint firstAttribute="bottom" secondItem="xd6-GF-vtP" secondAttribute="bottom" id="Q1e-D8-zSM"/>
-                            <constraint firstItem="xd6-GF-vtP" firstAttribute="top" secondItem="CB2-YZ-trT" secondAttribute="top" id="gad-xN-yZg"/>
                             <constraint firstItem="BSp-NR-8Dc" firstAttribute="centerX" secondItem="CB2-YZ-trT" secondAttribute="centerX" id="m6b-7W-J7k"/>
-                            <constraint firstItem="xd6-GF-vtP" firstAttribute="leading" secondItem="CB2-YZ-trT" secondAttribute="leading" id="qZR-M7-NrS"/>
-                            <constraint firstAttribute="trailing" secondItem="xd6-GF-vtP" secondAttribute="trailing" id="yAg-J1-IDm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wph-SO-ge0"/>
+                    <connections>
+                        <outlet property="bottomCos" destination="6ZB-w0-Mev" id="dtc-7E-FEt"/>
+                        <outlet property="indicatorView" destination="BSp-NR-8Dc" id="bVT-wn-KFN"/>
+                        <outlet property="mindMazeWebView" destination="eiH-7X-B51" id="mRS-PD-ZtI"/>
+                        <outlet property="topCos" destination="1cg-LT-Dqh" id="bb5-36-kK3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eue-Ok-QyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -588,10 +587,10 @@
                                     <constraint firstAttribute="width" constant="300" id="cZz-tl-b1f"/>
                                     <constraint firstAttribute="height" constant="300" id="feU-xh-lvA"/>
                                 </constraints>
-                                <string key="text">RealRiderOdyssey
-Welcome to RealRiderOdyssey, your ultimate destination for adrenaline-pumping, mind-bending, and skill-testing gaming experiences! Our app brings together a collection of exciting games that challenge your reflexes, creativity, and strategic thinking, ensuring endless hours of fun and entertainment.
+                                <string key="text">Rabbit Rider Quest
+Welcome tRabbit Rider Quest, your ultimate destination for adrenaline-pumping, mind-bending, and skill-testing gaming experiences! Our app brings together a collection of exciting games that challenge your reflexes, creativity, and strategic thinking, ensuring endless hours of fun and entertainment.
 
-At RealRiderOdyssey, we’re passionate about crafting immersive gameplay experiences that cater to gamers of all skill levels. Each game is designed with unique mechanics, stunning visuals, and engaging challenges to keep you coming back for more.
+ARabbit Rider Quest, we’re passionate about crafting immersive gameplay experiences that cater to gamers of all skill levels. Each game is designed with unique mechanics, stunning visuals, and engaging challenges to keep you coming back for more.
 
 Our Games
 	•	Highway Survival

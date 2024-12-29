@@ -6,4 +6,6 @@ target 'RabbitRiderQuest' do
   use_frameworks!
 
   # Pods for RabbitRiderQuest
+  pod 'Firebase/Messaging'
+  pod 'AppsFlyerFramework'
 end
