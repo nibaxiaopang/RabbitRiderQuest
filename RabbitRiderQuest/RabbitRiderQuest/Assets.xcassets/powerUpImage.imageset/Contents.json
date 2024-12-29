@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "https:www.google.comurl?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-png%2Fpower-up&psig=AOvVaw14IzLDR5Z5Gulm_146XWqB&ust=1735039806387000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjI6Y3lvYoDFQAAAAAdAAAAABAE.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
+  }
+}
